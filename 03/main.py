@@ -38,7 +38,7 @@ def part1(map, start_point, move_pattern):
         if map[next_point[1]][next_point[0]] == "#":
             count += 1
 
-        # set next point to current point
+        # if the loop is over than maxlimit 1000 then we exit the loop
         if step > 1000:
             return count
 
